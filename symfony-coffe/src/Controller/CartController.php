@@ -11,6 +11,7 @@ class CartController extends AbstractController
     #[Route('/cart', name: 'cart')]
     public function index(): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
         return $this->render('cart/index.html.twig', []);
     }
 }
