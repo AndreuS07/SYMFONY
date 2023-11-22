@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tienda{% endblock %}
+
+{% block body %}
+    <h1>Ficha de la tienda</h1>
+    <br>
+    <ul>
+        <li><strong>{{ tiendas.nombre }}</strong></li>
+        <li><strong>Horario: </strong>{{ tiendas.horario }}</li>
+        <li><strong>Teléfono: </strong>{{ tiendas.telefono }}</li>
+        <li><strong>Correo: </strong>{{ tiendas.email }}</li>
+        <li><strong>Sitio web: </strong>{{ tiendas.web }}</li>
+    </ul>
+    <img src="/img/1uno.png" class="casita" height="250" width="250"/>
+    <img src="/img/rece.jpg" class="recibo" height="344" width="150" />
+{% endblock %}
+
